@@ -101,7 +101,11 @@ export const ReelsSection = () => {
           >
             <div>
               <Image
-                src={reel?.thumbnail}
+                src={
+                  process.env.NODE_ENV === "production"
+                    ? `/amrutveni-landing-liceqit${reel?.thumbnail}`
+                    : reel?.thumbnail
+                }
                 alt="Reel thumbnail"
                 width={240}
                 height={332}
@@ -156,7 +160,14 @@ export const ReelsSection = () => {
                 ref={videoRef}
                 id="amrutveni-reel-id-1"
               >
-                <source src={modalValues?.video} type="video/mp4" />
+                <source
+                  src={
+                    process.env.NODE_ENV === "production"
+                      ? `/amrutveni-landing-liceqit${modalValues?.video}`
+                      : modalValues?.video
+                  }
+                  type="video/mp4"
+                />
                 Sorry, your browser doesn&apos;t support embedded videos.
               </video>
               <div className="absolute flex flex-col gap-2 right-3 bottom-3">

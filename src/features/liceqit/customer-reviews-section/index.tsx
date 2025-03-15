@@ -32,7 +32,11 @@ export const CustomerReviewsSection = () => {
               key={`amrutveni-liceqit-review-id-${review?.id}`}
             >
               <Image
-                src={review?.image}
+                src={
+                  process.env.NODE_ENV === "production"
+                    ? `/amrutveni-landing-liceqit${review?.image}`
+                    : review?.image
+                }
                 alt="Customer one"
                 width={48}
                 height={48}
