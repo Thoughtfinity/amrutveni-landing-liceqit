@@ -1,0 +1,196 @@
+{
+  "liceqit": {
+    "basic": {
+      "price": "145"
+    },
+    "features": [
+      {
+        "id": 1,
+        "image": "Rabbit",
+        "description": "Cruelty Free"
+      },
+      {
+        "id": 2,
+        "image": "Heart",
+        "description": "Sustainable"
+      },
+      {
+        "id": 3,
+        "image": "WheatOff",
+        "description": "Glutton Free"
+      },
+      {
+        "id": 4,
+        "image": "Flower",
+        "description": "Natural Ingredients"
+      }
+    ],
+    "howToUse": [
+      {
+        "id": 1,
+        "header": "Apply",
+        "description": "Take a sufficient amount and evenly apply it to the scalp and hair, covering from root to tip.",
+        "angle": "rotate-[-5.39deg]",
+        "image": "#"
+      },
+      {
+        "id": 2,
+        "header": "Massage",
+        "description": "Gently massage the scalp to ensure deep penetration of the oil for effective lice removal.",
+        "angle": "rotate-[2.7deg]",
+        "image": "#"
+      },
+      {
+        "id": 3,
+        "header": "Comb",
+        "description": "Use a fine-toothed lice comb to remove dead lice and nits from the hair.",
+        "angle": "rotate-[-6.06deg]",
+        "image": "#"
+      },
+      {
+        "id": 4,
+        "header": "Wash",
+        "description": "Leave it on for at least 30 minutes, then rinse thoroughly with a mild shampoo.",
+        "angle": "rotate-[1.53deg]",
+        "image": "#"
+      }
+    ],
+    "benefits": [
+      {
+        "id": 1,
+        "header": "Effective Lice Removal",
+        "description": "Eliminates lice and nits naturally without harsh chemicals.",
+        "image": "BugOff",
+        "className": "col-start-2 col-end-3 sm:col-start-1 sm:col-end-2 row-start-1 row-end-2 justify-self-center sm:flex-row-reverse"
+      },
+      {
+        "id": 2,
+        "header": "Prevents Reinfestation",
+        "description": "Creates an unfavorable environment for lice to return.",
+        "image": "ShieldCheck",
+        "className": "col-start-2 col-end-3 row-start-2 row-end-3 sm:row-start-1 sm:row-end-2 justify-self-center sm:flex-row"
+      },
+      {
+        "id": 3,
+        "header": "Gentle on Scalp",
+        "description": "Soothes irritation and itching with herbal ingredients.",
+        "image": "Waves",
+        "className": "col-start-2 col-end-3 sm:col-start-1 sm:col-end-2 row-start-3 row-end-4 sm:row-start-2 sm:row-end-3 justify-self-start sm:flex-row-reverse"
+      },
+      {
+        "id": 4,
+        "header": "Nourishes Hair",
+        "description": "Strengthens roots, reduces breakage, and improves hair texture.",
+        "image": "Blend",
+        "className": "col-start-2 col-end-3 row-start-4 row-end-5 sm:row-start-2 sm:row-end-3 justify-self-end sm:flex-row"
+      },
+      {
+        "id": 5,
+        "header": "Chemical-Free Formula",
+        "description": "Free from pesticides and toxins, making it safe for all ages.",
+        "image": "Sprout",
+        "className": "col-start-2 col-end-3 sm:col-start-1 sm:col-end-2 row-start-5 row-end-6 sm:row-start-3 sm:row-end-4 justify-self-center sm:flex-row-reverse"
+      },
+      {
+        "id": 6,
+        "header": "Pleasant Fragrance",
+        "description": "Leaves hair fresh and clean without strong chemical odors.",
+        "image": "Flower",
+        "className": "col-start-2 col-end-3 row-start-6 row-end-7 sm:row-start-3 sm:row-end-4 justify-self-center sm:flex-row"
+      }
+    ],
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Priya",
+        "message": "LiceQit worked wonders! After just a few applications, my hair was completely lice-free. Plus, it smells amazing and leaves my hair soft.",
+        "image": "/images/liceqit/customer-reviews/customer-1.png"
+      },
+      {
+        "id": 2,
+        "name": "Rahul",
+        "message": "I was worried about using harsh chemicals on my kids, but this herbal formula is gentle and super effective. No more itching, and their hair feels great!",
+        "image": "/images/liceqit/customer-reviews/customer-1.png"
+      },
+      {
+        "id": 3,
+        "name": "Ananya",
+        "message": "Finally, a lice treatment that actually works without damaging my hair! The natural ingredients make my scalp feel fresh and healthy.",
+        "image": "/images/liceqit/customer-reviews/customer-1.png"
+      },
+      {
+        "id": 4,
+        "name": "Vikram",
+        "message": "So easy to use! Just applied, left it on, and washed it off. No lice, no irritation, and my hair smells so much better than with chemical treatments.",
+        "image": "/images/liceqit/customer-reviews/customer-1.png"
+      },
+      {
+        "id": 5,
+        "name": "Neha",
+        "message": "Tried many lice treatments before, but this is by far the best. It removes lice quickly while nourishing my hair. Highly recommend!",
+        "image": "/images/liceqit/customer-reviews/customer-1.png"
+      }
+    ],
+    "reels": [
+      {
+        "id": 1,
+        "thumbnail": "/images/liceqit/reel/thumbnail/reel-1.png",
+        "video": "/videos/liceqit/reel-1.mp4",
+        "description": "You are our inspiration - in all the work we do! Happy Women's Day, Enjoy 15% off on Hair Elixir Women Offer valid from 8th March - 16th March Use coupon code WMD15 at checkout",
+        "tags": "#Amrutveni #GentleYetStrong #LovelyHairCare #HairCareProducts #hairfallremedy #HairCare #hairnectar #womensday #march8"
+      },
+      {
+        "id": 2,
+        "thumbnail": "/images/liceqit/reel/thumbnail/reel-2.png",
+        "video": "/videos/liceqit/reel-2.mp4",
+        "description": "You are our inspiration - in all the work we do! Happy Women's Day, Enjoy 15% off on Hair Elixir Women Offer valid from 8th March - 16th March Use coupon code WMD15 at checkout",
+        "tags": "#licefree #naturallcetreatment #licesolution #headliceremoval"
+      },
+      {
+        "id": 3,
+        "thumbnail": "/images/liceqit/reel/thumbnail/reel-3.png",
+        "video": "/videos/liceqit/reel-3.mp4",
+        "description": "You are our inspiration - in all the work we do! Happy Women's Day, Enjoy 15% off on Hair Elixir Women Offer valid from 8th March - 16th March Use coupon code WMD15 at checkout",
+        "tags": "#licefree #naturallcetreatment #licesolution #headliceremoval"
+      },
+      {
+        "id": 4,
+        "thumbnail": "/images/liceqit/reel/thumbnail/reel-4.png",
+        "video": "/videos/liceqit/reel-4.mp4",
+        "description": "You are our inspiration - in all the work we do! Happy Women's Day, Enjoy 15% off on Hair Elixir Women Offer valid from 8th March - 16th March Use coupon code WMD15 at checkout",
+        "tags": "#licefree #naturallcetreatment #licesolution #headliceremoval"
+      },
+      {
+        "id": 5,
+        "thumbnail": "/images/liceqit/reel/thumbnail/reel-5.png",
+        "video": "/videos/liceqit/reel-5.mp4",
+        "description": "You are our inspiration - in all the work we do! Happy Women's Day, Enjoy 15% off on Hair Elixir Women Offer valid from 8th March - 16th March Use coupon code WMD15 at checkout",
+        "tags": "#licefree #naturallcetreatment #licesolution #headliceremoval"
+      },
+      {
+        "id": 6,
+        "thumbnail": "/images/liceqit/reel/thumbnail/reel-6.png",
+        "video": "/videos/liceqit/reel-6.mp4",
+        "description": "You are our inspiration - in all the work we do! Happy Women's Day, Enjoy 15% off on Hair Elixir Women Offer valid from 8th March - 16th March Use coupon code WMD15 at checkout",
+        "tags": "#licefree #naturallcetreatment #licesolution #headliceremoval"
+      }
+    ],
+    "faq": [
+      {
+        "id": 1,
+        "question": "Is Amrutveni LiceQit safe for children?",
+        "answer": "Yes, Amrutveni LiceQit is made with natural ingredients and is completely free from harmful chemicals, making it safe for children and adults."
+      },
+      {
+        "id": 2,
+        "question": "How often should I use it to remove lice completely?",
+        "answer": "For best results, apply it 2-3 times a week until all lice and nits are gone. Regular use helps prevent reinfestation."
+      },
+      {
+        "id": 3,
+        "question": "Does it have a strong smell like chemical lice treatments?",
+        "answer": "No, Amrutveni LiceQit has a mild, herbal fragrance that leaves hair smelling fresh and clean."
+      }
+    ]
+  }
+}
