@@ -1,11 +1,21 @@
 import { BuyNowButton } from "@/features/common/buynow-button";
 import React from "react";
 import LICEQIT_DATA from "@/lib/constants/liceqit/liceqit.json";
+import classNames from "classnames";
 
 export const HeroSection = () => {
   return (
     <div className="min-h-[calc(100vh-60px)] p-4">
-      <div className="w-full h-full min-h-[calc(100vh-92px)] rounded-2xl bg-[url('/images/liceqit/hero/hero-image.png')] bg-cover bg-center relative">
+      <div
+        className={classNames({
+          "w-full h-full min-h-[calc(100vh-92px)] rounded-2xl bg-cover bg-center relative":
+            true,
+          "bg-[url('/amrutveni-landing-liceqit/images/liceqit/hero/hero-image.png')]":
+            process.env.NODE_ENV === "production",
+          "bg-[url('/images/liceqit/hero/hero-image.png')]":
+            process.env.NODE_ENV !== "production",
+        })}
+      >
         <div className="min-h-[calc(100vh-92px)] flex flex-col justify-between relative z-10">
           <div className="p-4 pt-8 flex flex-col gap-1 desktop:p-8 desktop:gap-3">
             <h1 className="text-white font-semibold text-3xl desktop:text-7xl desktop:font-medium">

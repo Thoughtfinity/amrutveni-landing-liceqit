@@ -134,14 +134,11 @@ export const ReelsSection = () => {
           </button>
         </div>
       )}
-      <BuyNowButton
-        message="Buy Now"
-        className="w-fit mx-auto"
-      />
+      <BuyNowButton message="Buy Now" className="w-fit mx-auto" />
       {isModalOpen && (
         <div className="fixed w-full h-full top-1/2 -translate-x-1/2 left-1/2 -translate-y-1/2 bg-black/50 z-[99] flex items-center justify-center px-4 desktop:px-16">
           <div
-            className="w-full max-w-[772px] min-h-[80vh] max-h-[90vh] desktop:min-h-[70vh] bg-white rounded-2xl flex flex-col gap-4 desktop:gap-0 desktop:grid desktop:grid-cols-2 relative"
+            className="w-full min-[360px]:max-w-[350px] sm:max-w-[772px] min-h-[80vh] max-h-[90vh] sm:min-h-[70vh] bg-white rounded-2xl flex flex-col gap-4 sm:gap-0 sm:grid sm:grid-cols-2 relative"
             ref={modalRef}
           >
             <button
@@ -150,7 +147,7 @@ export const ReelsSection = () => {
             >
               <X className="text-white w-5 h-5" />
             </button>
-            <div className="grow bg-gray-300 rounded-t-2xl desktop:rounded-t-none desktop:rounded-l-2xl relative h-full overflow-hidden">
+            <div className="grow bg-gray-300 rounded-t-2xl sm:rounded-t-none sm:rounded-l-2xl relative h-full overflow-hidden">
               <video
                 className="w-full h-full relative"
                 autoPlay
@@ -158,7 +155,6 @@ export const ReelsSection = () => {
                 controls={false}
                 muted={isMuted}
                 ref={videoRef}
-                id="amrutveni-reel-id-1"
               >
                 <source
                   src={
@@ -193,10 +189,10 @@ export const ReelsSection = () => {
                 </button>
               </div>
             </div>
-            <div className="flex flex-col gap-4 pb-8 desktop:pt-16 desktop:justify-between">
+            <div className="flex flex-col gap-4 pb-8 sm:pt-16 desktop:justify-between">
               <div className="flex flex-col gap-4">
-                <div className="px-4 flex items-center gap-4">
-                  <div className="bg-liceqit-primary w-12 h-12 rounded-full flex items-center justify-center">
+                <div className="px-4 flex items-center gap-4 flex-wrap">
+                  <div className="bg-liceqit-primary min-w-12 min-h-12 rounded-full flex items-center justify-center">
                     <Image src={Logo} alt="logo" className="w-8" />
                   </div>
                   <div className="flex items-center gap-2">
