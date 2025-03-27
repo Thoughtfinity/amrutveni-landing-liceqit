@@ -7,9 +7,10 @@
 @theme {
   --breakpoint-desktop: 1200px;
 
-  --color-liceqit-background: #d0c7b2;
+  /* --color-liceqit-background: #d0c7b2; */
+  --color-liceqit-background: #fff;
   --color-liceqit-foreground: #000000;
-  --color-liceqit-primary: #032713;
+  --color-liceqit-primary: #294634;
   --color-liceqit-charcoal-grey: #717171;
   --color-liceqit-slide-background: #d9d9d9;
   --color-liceqit-deep-grey: #828282;

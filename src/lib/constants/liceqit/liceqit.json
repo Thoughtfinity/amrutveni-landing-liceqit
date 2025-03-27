@@ -104,31 +104,31 @@
         "id": 1,
         "name": "Priya",
         "message": "LiceQit worked wonders! After just a few applications, my hair was completely lice-free. Plus, it smells amazing and leaves my hair soft.",
-        "image": "/images/liceqit/customer-reviews/customer-1.png"
+        "image": "/images/liceqit/customer-reviews/customer-1.jpg"
       },
       {
         "id": 2,
         "name": "Rahul",
         "message": "I was worried about using harsh chemicals on my kids, but this herbal formula is gentle and super effective. No more itching, and their hair feels great!",
-        "image": "/images/liceqit/customer-reviews/customer-1.png"
+        "image": "/images/liceqit/customer-reviews/customer-2.jpg"
       },
       {
         "id": 3,
         "name": "Ananya",
         "message": "Finally, a lice treatment that actually works without damaging my hair! The natural ingredients make my scalp feel fresh and healthy.",
-        "image": "/images/liceqit/customer-reviews/customer-1.png"
+        "image": "/images/liceqit/customer-reviews/customer-3.jpg"
       },
       {
         "id": 4,
         "name": "Vikram",
         "message": "So easy to use! Just applied, left it on, and washed it off. No lice, no irritation, and my hair smells so much better than with chemical treatments.",
-        "image": "/images/liceqit/customer-reviews/customer-1.png"
+        "image": "/images/liceqit/customer-reviews/customer-4.jpg"
       },
       {
         "id": 5,
         "name": "Neha",
         "message": "Tried many lice treatments before, but this is by far the best. It removes lice quickly while nourishing my hair. Highly recommend!",
-        "image": "/images/liceqit/customer-reviews/customer-1.png"
+        "image": "/images/liceqit/customer-reviews/customer-5.jpg"
       }
     ],
     "reels": [

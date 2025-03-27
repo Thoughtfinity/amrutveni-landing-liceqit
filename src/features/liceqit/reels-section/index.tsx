@@ -15,7 +15,7 @@ import { type Swiper as SwiperRef } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Button } from "@/features/common/button";
+import { BuyNowButton } from "@/features/common/buynow-button";
 import Image from "next/image";
 import Logo from "@/../public/logo/logo-white.svg";
 import Link from "next/link";
@@ -134,9 +134,9 @@ export const ReelsSection = () => {
           </button>
         </div>
       )}
-      <Button
+      <BuyNowButton
         message="Buy Now"
-        className="w-fit mx-auto bg-liceqit-primary text-white"
+        className="w-fit mx-auto"
       />
       {isModalOpen && (
         <div className="fixed w-full h-full top-1/2 -translate-x-1/2 left-1/2 -translate-y-1/2 bg-black/50 z-[99] flex items-center justify-center px-4 desktop:px-16">

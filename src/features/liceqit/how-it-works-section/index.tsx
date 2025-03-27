@@ -19,14 +19,21 @@ export const HowItWorksSection = () => {
           healthy, and lice-free with regular use.
         </p>
       </div>
-      <div className="flex items-center justify-evenly gap-4">
-        <div className="w-full max-w-[300px] hidden md:block">
+      <div className="sm:hidden w-full flex items-center justify-center">
+        <Image
+          src={HowItWorkKid}
+          alt="LiceQit using kid"
+          className="w-full max-w-[300px]"
+        />
+      </div>
+      <div className="hidden sm:grid grid-cols-3 gap-4 max-w-[1000px] mx-auto">
+        <div className="w-full max-w-[300px] ">
           <Image src={HowItWorkMen} alt="LiceQit using men" />
         </div>
         <div className="max-w-[300px]">
           <Image src={HowItWorkKid} alt="LiceQit using kid" />
         </div>
-        <div className="max-w-[300px] hidden md:block">
+        <div className="max-w-[300px] ">
           <Image src={HowItWorkWomen} alt="LiceQit using women" />
         </div>
       </div>

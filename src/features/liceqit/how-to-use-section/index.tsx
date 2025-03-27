@@ -1,4 +1,4 @@
-import { Button } from "@/features/common/button";
+import { BuyNowButton } from "@/features/common/buynow-button";
 import React from "react";
 import LICEQIT_DATA from "@/lib/constants/liceqit/liceqit.json";
 import classNames from "classnames";
@@ -29,10 +29,7 @@ export const HowToUseSection = () => {
           </div>
         ))}
       </div>
-      <Button
-        message="Buy Now"
-        className="w-fit mx-auto bg-liceqit-primary text-white"
-      />
+      <BuyNowButton message="Buy Now" className="w-fit mx-auto" />
     </div>
   );
 };

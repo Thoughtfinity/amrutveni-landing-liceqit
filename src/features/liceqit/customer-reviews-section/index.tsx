@@ -40,7 +40,7 @@ export const CustomerReviewsSection = () => {
                 alt="Customer one"
                 width={48}
                 height={48}
-                className="w-10 desktop:w-12"
+                className="w-10 h-10 desktop:w-12 desktop:h-12 rounded-full"
               />
               <h3 className="font-medium text-lg pt-2 pb-4">
                 {review?.name} says:
