@@ -28,75 +28,59 @@
     "howToUse": [
       {
         "id": 1,
-        "header": "Apply",
-        "description": "Take a sufficient amount and evenly apply it to the scalp and hair, covering from root to tip.",
-        "angle": "rotate-[-5.39deg]",
-        "image": "#"
+        "header": "Apply & Massage",
+        "description": "Evenly apply to scalp and hair, then massage for deep penetration.",
+        "image": "/images/liceqit/how-to-use/step-1.png"
       },
       {
         "id": 2,
-        "header": "Massage",
-        "description": "Gently massage the scalp to ensure deep penetration of the oil for effective lice removal.",
-        "angle": "rotate-[2.7deg]",
-        "image": "#"
+        "header": "Comb",
+        "description": "Use a fine-toothed lice comb to remove dead lice and nits from the hair.",
+        "image": "/images/liceqit/how-to-use/step-1.png"
       },
       {
         "id": 3,
-        "header": "Comb",
-        "description": "Use a fine-toothed lice comb to remove dead lice and nits from the hair.",
-        "angle": "rotate-[-6.06deg]",
-        "image": "#"
-      },
-      {
-        "id": 4,
         "header": "Wash",
         "description": "Leave it on for at least 30 minutes, then rinse thoroughly with a mild shampoo.",
-        "angle": "rotate-[1.53deg]",
-        "image": "#"
+        "image": "/images/liceqit/how-to-use/step-3.png"
       }
     ],
     "benefits": [
       {
         "id": 1,
-        "header": "Effective Lice Removal",
+        "header": "Effective lice removal",
         "description": "Eliminates lice and nits naturally without harsh chemicals.",
-        "image": "BugOff",
-        "className": "col-start-2 col-end-3 sm:col-start-1 sm:col-end-2 row-start-1 row-end-2 justify-self-center sm:flex-row-reverse"
+        "image": "BugOff"
       },
       {
         "id": 2,
-        "header": "Prevents Reinfestation",
+        "header": "Prevents reinfestation",
         "description": "Creates an unfavorable environment for lice to return.",
-        "image": "ShieldCheck",
-        "className": "col-start-2 col-end-3 row-start-2 row-end-3 sm:row-start-1 sm:row-end-2 justify-self-center sm:flex-row"
+        "image": "ShieldCheck"
       },
       {
         "id": 3,
-        "header": "Gentle on Scalp",
+        "header": "Gentle on scalp",
         "description": "Soothes irritation and itching with herbal ingredients.",
-        "image": "Waves",
-        "className": "col-start-2 col-end-3 sm:col-start-1 sm:col-end-2 row-start-3 row-end-4 sm:row-start-2 sm:row-end-3 justify-self-start sm:flex-row-reverse"
+        "image": "Waves"
       },
       {
         "id": 4,
-        "header": "Nourishes Hair",
+        "header": "Nourishes hair",
         "description": "Strengthens roots, reduces breakage, and improves hair texture.",
-        "image": "Blend",
-        "className": "col-start-2 col-end-3 row-start-4 row-end-5 sm:row-start-2 sm:row-end-3 justify-self-end sm:flex-row"
+        "image": "Blend"
       },
       {
         "id": 5,
-        "header": "Chemical-Free Formula",
+        "header": "Chemical-free formula",
         "description": "Free from pesticides and toxins, making it safe for all ages.",
-        "image": "Sprout",
-        "className": "col-start-2 col-end-3 sm:col-start-1 sm:col-end-2 row-start-5 row-end-6 sm:row-start-3 sm:row-end-4 justify-self-center sm:flex-row-reverse"
+        "image": "Sprout"
       },
       {
         "id": 6,
-        "header": "Pleasant Fragrance",
+        "header": "Pleasant fragrance",
         "description": "Leaves hair fresh and clean without strong chemical odors.",
-        "image": "Flower",
-        "className": "col-start-2 col-end-3 row-start-6 row-end-7 sm:row-start-3 sm:row-end-4 justify-self-center sm:flex-row"
+        "image": "Flower"
       }
     ],
     "reviews": [

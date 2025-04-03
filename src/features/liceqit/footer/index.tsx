@@ -1,3 +1,5 @@
+"use client";
+
 import { ArrowRight, Facebook, Instagram, Youtube } from "lucide-react";
 import Link from "next/link";
 import React from "react";
@@ -7,10 +9,16 @@ import CertificateThree from "@/../public/images/common/certificates/certificate
 import CertificateFour from "@/../public/images/common/certificates/certificate-4.svg";
 import CertificateFive from "@/../public/images/common/certificates/certificate-5.svg";
 import Image from "next/image";
+import { useDataContext } from "@/lib/utils/context/useDataContext";
 
 export const Footer = () => {
+  const { footerRef } = useDataContext();
+
   return (
-    <div className="w-full max-w-[1620px] px-4 desktop:px-16 pt-10 pb-4 bg-liceqit-primary mt-48 rounded-t-[32px] desktop:rounded-t-[56px] flex flex-col gap-8 md:gap-16">
+    <div
+      className="w-full max-w-[1620px] px-4 desktop:px-16 pt-10 pb-4 bg-liceqit-primary mt-48 rounded-t-[32px] desktop:rounded-t-[56px] flex flex-col gap-8 md:gap-16"
+      ref={footerRef}
+    >
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
         <div className="flex flex-col gap-6 md:gap-12">
           <div className="flex flex-col gap-2.5">
@@ -33,8 +41,8 @@ export const Footer = () => {
                 className="w-full h-full outline-none text-sm"
                 placeholder="Your email"
               />
-              <button className="h-full flex items-center justify-end cursor-pointer">
-                <ArrowRight className="w-4" />
+              <button className="h-full flex items-center justify-end cursor-pointer group">
+                <ArrowRight className="w-4 group-hover:translate-x-1 group-hover:-rotate-45 transition-transform duration-300" />
               </button>
             </div>
           </div>
@@ -70,25 +78,25 @@ export const Footer = () => {
             <div className="flex flex-col gap-1.5">
               <Link
                 href={"#"}
-                className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base"
+                className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base relative after:absolute after:w-full after:h-px after:bg-white after:left-0 after:right-0 after:bottom-0 after:rounded-full after:origin-[100%_100%] after:scale-x-0 hover:after:origin-[0%_0%] hover:after:scale-x-100 after:transition-transform after:duration-300"
               >
                 Home
               </Link>
               <Link
                 href={"#"}
-                className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base"
+                className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base relative after:absolute after:w-full after:h-px after:bg-white after:left-0 after:right-0 after:bottom-0 after:rounded-full after:origin-[100%_100%] after:scale-x-0 hover:after:origin-[0%_0%] hover:after:scale-x-100 after:transition-transform after:duration-300"
               >
                 About
               </Link>
               <Link
                 href={"#"}
-                className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base"
+                className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base relative after:absolute after:w-full after:h-px after:bg-white after:left-0 after:right-0 after:bottom-0 after:rounded-full after:origin-[100%_100%] after:scale-x-0 hover:after:origin-[0%_0%] hover:after:scale-x-100 after:transition-transform after:duration-300"
               >
                 Contact
               </Link>
               <Link
                 href={"#"}
-                className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base"
+                className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base relative after:absolute after:w-full after:h-px after:bg-white after:left-0 after:right-0 after:bottom-0 after:rounded-full after:origin-[100%_100%] after:scale-x-0 hover:after:origin-[0%_0%] hover:after:scale-x-100 after:transition-transform after:duration-300"
               >
                 Product
               </Link>
@@ -96,19 +104,19 @@ export const Footer = () => {
             <div className="flex flex-col gap-1.5">
               <Link
                 href={"#"}
-                className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base"
+                className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base relative after:absolute after:w-full after:h-px after:bg-white after:left-0 after:right-0 after:bottom-0 after:rounded-full after:origin-[100%_100%] after:scale-x-0 hover:after:origin-[0%_0%] hover:after:scale-x-100 after:transition-transform after:duration-300"
               >
                 Privacy Policy
               </Link>
               <Link
                 href={"#"}
-                className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base"
+                className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base relative after:absolute after:w-full after:h-px after:bg-white after:left-0 after:right-0 after:bottom-0 after:rounded-full after:origin-[100%_100%] after:scale-x-0 hover:after:origin-[0%_0%] hover:after:scale-x-100 after:transition-transform after:duration-300"
               >
                 Refund Policy
               </Link>
               <Link
                 href={"#"}
-                className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base"
+                className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base relative after:absolute after:w-full after:h-px after:bg-white after:left-0 after:right-0 after:bottom-0 after:rounded-full after:origin-[100%_100%] after:scale-x-0 hover:after:origin-[0%_0%] hover:after:scale-x-100 after:transition-transform after:duration-300"
               >
                 Terms and Conditions
               </Link>
@@ -145,13 +153,22 @@ export const Footer = () => {
           />
         </div>
         <div className="flex items-center justify-end gap-6">
-          <Link href={"#"}>
+          <Link
+            href={"#"}
+            className="hover:scale-125 transition-transform duration-300"
+          >
             <Facebook className="text-white w-6" />
           </Link>
-          <Link href={"#"}>
+          <Link
+            href={"#"}
+            className="hover:scale-125 transition-transform duration-300"
+          >
             <Instagram className="text-white w-6" />
           </Link>
-          <Link href={"#"}>
+          <Link
+            href={"#"}
+            className="hover:scale-125 transition-transform duration-300"
+          >
             <Youtube className="text-white w-6" />
           </Link>
         </div>
