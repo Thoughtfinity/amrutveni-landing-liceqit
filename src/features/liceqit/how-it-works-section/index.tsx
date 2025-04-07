@@ -2,9 +2,7 @@ import React from "react";
 import { SlideUpAnimator } from "../common/slideup-animation";
 import { ImageRevealer } from "../common/image-reveal-animation";
 import Image from "next/image";
-import HowItWorkMen from "@/../public/images/liceqit/how-it-work/men.png";
-import HowItWorkKid from "@/../public/images/liceqit/how-it-work/kid.png";
-import HowItWorkWomen from "@/../public/images/liceqit/how-it-work/women.png";
+import ProductImage from "@/../public/images/liceqit/bottle/featured.png";
 
 export const HowItWorksSection = () => {
   return (
@@ -25,47 +23,15 @@ export const HowItWorksSection = () => {
           </p>
         </SlideUpAnimator>
       </div>
-      <div className="sm:hidden w-full flex items-center justify-center z-10">
+      <div className="flex items-center justify-center">
         <ImageRevealer
-          className="w-full max-w-[300px]"
-          revealerClassName="rounded-t-full"
+          className="w-[75%] mx-auto desktop:w-[500px] rounded-full"
+          revealerClassName="rounded-full"
         >
           <Image
-            src={HowItWorkKid}
-            alt="Two kids with beautiful lice free hair"
-            className="rounded-t-full"
-          />
-        </ImageRevealer>
-      </div>
-      <div className="hidden sm:grid grid-cols-3 gap-4 w-full max-w-[1000px] mx-auto z-10">
-        <ImageRevealer
-          className="w-full max-w-[300px]"
-          revealerClassName="rounded-t-full"
-        >
-          <Image
-            src={HowItWorkMen}
-            alt="A man with beautiful lice free hair"
-            className="rounded-t-full"
-          />
-        </ImageRevealer>
-        <ImageRevealer
-          className="w-full max-w-[300px]"
-          revealerClassName="rounded-t-full"
-        >
-          <Image
-            src={HowItWorkKid}
-            alt="Two kids with beautiful lice free hair"
-            className="rounded-t-full"
-          />
-        </ImageRevealer>
-        <ImageRevealer
-          className="w-full max-w-[300px]"
-          revealerClassName="rounded-t-full"
-        >
-          <Image
-            src={HowItWorkWomen}
-            alt="A women with beautiful lice free hair"
-            className="rounded-t-full"
+            src={ProductImage}
+            alt="product image"
+            className="rounded-full"
           />
         </ImageRevealer>
       </div>

@@ -50,6 +50,6 @@ export const scaleUpContainerVariant = {
 };
 
 export const scaleUpItemVariant = {
-  hidden: { scale: 0 },
-  show: { scale: 1 },
+  hidden: { y: 20, opacity: 0 },
+  show: { y: 0, opacity: 1 },
 };

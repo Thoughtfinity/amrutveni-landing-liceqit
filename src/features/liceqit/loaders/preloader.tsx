@@ -6,9 +6,12 @@ import gsap from "gsap";
 import { CustomEase } from "gsap/all";
 import Logo from "@/../public/logo/logo.svg";
 import Image from "next/image";
+import { useDataContext } from "@/lib/utils/context/useDataContext";
 
 export const PreLoader: React.FC = () => {
   gsap.registerPlugin(CustomEase);
+
+  const { setIsPageLoaded } = useDataContext();
 
   useEffect(() => {
     const onPageLoad = () => {
@@ -19,18 +22,8 @@ export const PreLoader: React.FC = () => {
         duration: 1,
         ease: "power4.inOut",
         display: "none",
-      })
-        .fromTo(
-          ".hero-header",
-          { top: "100%" },
-          {
-            top: 0,
-            duration: 0.95,
-            ease: CustomEase.create("custom", "0.645,0.045,0.355,1"),
-          },
-          "-=0.6"
-        )
-        .fromTo(".hero-sub-content", { opacity: 0 }, { opacity: 1 });
+        onComplete: () => setIsPageLoaded(true),
+      });
     };
 
     if (document.readyState === "complete") {

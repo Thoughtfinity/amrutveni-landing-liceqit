@@ -54,9 +54,9 @@ export const AchievementSection = () => {
       className={classNames({
         "flex flex-col md:flex-row items-center justify-center text-center mx-4 desktop:mx-16 py-12 desktop:py-32 bg-cover bg-center rounded-3xl desktop:rounded-4xl relative":
           true,
-        "bg-[url('/amrutveni-landing-liceqit/images/liceqit/other/blue-sky.jpeg')]":
+        "bg-[url('/amrutveni-landing-liceqit/images/liceqit/other/hair.png')]":
           process.env.NODE_ENV === "production",
-        "bg-[url('/images/liceqit/other/blue-sky.jpeg')]":
+        "bg-[url('/images/liceqit/other/hair.png')]":
           process.env.NODE_ENV !== "production",
       })}
     >
@@ -65,7 +65,7 @@ export const AchievementSection = () => {
           <motion.h1>{roundedProductSoldCount}</motion.h1>
           <h1>k+</h1>
         </div>
-        <p className="text-sm desktop:text-lg font-medium text-black">
+        <p className="text-sm desktop:text-lg font-medium text-gray-200">
           Products Sold
         </p>
       </div>
@@ -74,7 +74,7 @@ export const AchievementSection = () => {
           <motion.h1>{roundedHappyCustomersCount}</motion.h1>
           <h1>k+</h1>
         </div>
-        <p className="text-sm desktop:text-lg font-medium text-black">
+        <p className="text-sm desktop:text-lg font-medium text-gray-200">
           Happy Customers
         </p>
       </div>
@@ -83,7 +83,7 @@ export const AchievementSection = () => {
           <motion.h1>{roundedRepeatOrdersCount}</motion.h1>
           <h1>k+</h1>
         </div>
-        <p className="text-sm desktop:text-lg font-medium text-black">
+        <p className="text-sm desktop:text-lg font-medium text-gray-200">
           Repeat Order
         </p>
       </div>

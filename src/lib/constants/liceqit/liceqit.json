@@ -118,45 +118,33 @@
     "reels": [
       {
         "id": 1,
-        "thumbnail": "/images/liceqit/reel/thumbnail/reel-1.png",
-        "video": "/videos/liceqit/reel-1.mp4",
-        "description": "You are our inspiration - in all the work we do! Happy Women's Day, Enjoy 15% off on Hair Elixir Women Offer valid from 8th March - 16th March Use coupon code WMD15 at checkout",
-        "tags": "#Amrutveni #GentleYetStrong #LovelyHairCare #HairCareProducts #hairfallremedy #HairCare #hairnectar #womensday #march8"
+        "thumbnail": "/videos/liceqit/reel-thumbnail/reel-1.webm",
+        "video": "/videos/liceqit/reels/reel-1.mp4"
       },
       {
         "id": 2,
-        "thumbnail": "/images/liceqit/reel/thumbnail/reel-2.png",
-        "video": "/videos/liceqit/reel-2.mp4",
-        "description": "You are our inspiration - in all the work we do! Happy Women's Day, Enjoy 15% off on Hair Elixir Women Offer valid from 8th March - 16th March Use coupon code WMD15 at checkout",
-        "tags": "#licefree #naturallcetreatment #licesolution #headliceremoval"
+        "thumbnail": "/videos/liceqit/reel-thumbnail/reel-2.webm",
+        "video": "/videos/liceqit/reels/reel-2.mp4"
       },
       {
         "id": 3,
-        "thumbnail": "/images/liceqit/reel/thumbnail/reel-3.png",
-        "video": "/videos/liceqit/reel-3.mp4",
-        "description": "You are our inspiration - in all the work we do! Happy Women's Day, Enjoy 15% off on Hair Elixir Women Offer valid from 8th March - 16th March Use coupon code WMD15 at checkout",
-        "tags": "#licefree #naturallcetreatment #licesolution #headliceremoval"
+        "thumbnail": "/videos/liceqit/reel-thumbnail/reel-3.webm",
+        "video": "/videos/liceqit/reels/reel-3.mp4"
       },
       {
         "id": 4,
-        "thumbnail": "/images/liceqit/reel/thumbnail/reel-4.png",
-        "video": "/videos/liceqit/reel-4.mp4",
-        "description": "You are our inspiration - in all the work we do! Happy Women's Day, Enjoy 15% off on Hair Elixir Women Offer valid from 8th March - 16th March Use coupon code WMD15 at checkout",
-        "tags": "#licefree #naturallcetreatment #licesolution #headliceremoval"
+        "thumbnail": "/videos/liceqit/reel-thumbnail/reel-4.webm",
+        "video": "/videos/liceqit/reels/reel-4.mp4"
       },
       {
         "id": 5,
-        "thumbnail": "/images/liceqit/reel/thumbnail/reel-5.png",
-        "video": "/videos/liceqit/reel-5.mp4",
-        "description": "You are our inspiration - in all the work we do! Happy Women's Day, Enjoy 15% off on Hair Elixir Women Offer valid from 8th March - 16th March Use coupon code WMD15 at checkout",
-        "tags": "#licefree #naturallcetreatment #licesolution #headliceremoval"
+        "thumbnail": "/videos/liceqit/reel-thumbnail/reel-5.webm",
+        "video": "/videos/liceqit/reels/reel-5.mp4"
       },
       {
         "id": 6,
-        "thumbnail": "/images/liceqit/reel/thumbnail/reel-6.png",
-        "video": "/videos/liceqit/reel-6.mp4",
-        "description": "You are our inspiration - in all the work we do! Happy Women's Day, Enjoy 15% off on Hair Elixir Women Offer valid from 8th March - 16th March Use coupon code WMD15 at checkout",
-        "tags": "#licefree #naturallcetreatment #licesolution #headliceremoval"
+        "thumbnail": "/videos/liceqit/reel-thumbnail/reel-6.webm",
+        "video": "/videos/liceqit/reels/reel-6.mp4"
       }
     ],
     "faq": [

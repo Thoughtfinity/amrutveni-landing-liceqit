@@ -21,6 +21,15 @@ export const BenefitsSection = () => {
     Waves: Waves,
   };
 
+  const ColorMapper: Record<number, string> = {
+    1: "bg-[#ECC8AF]",
+    2: "bg-[#CDDDDD]",
+    3: "bg-[#BDD5EA]",
+    4: "bg-[#9CC5A1]",
+    5: "bg-[#ACD7EC]",
+    6: "bg-[#C3D898]",
+  };
+
   const getIconComponent = (iconName: string) => {
     const IconComponent = IconMap[iconName] || Waves;
     return (
@@ -38,7 +47,9 @@ export const BenefitsSection = () => {
       <div className="flex items-center justify-center flex-wrap gap-8">
         {LICEQIT_DATA?.liceqit?.benefits?.map((benefit) => (
           <SlideUpAnimator
-            className="w-full max-w-[160px] sm:max-w-[200px] min-h-[180px] sm:min-h-[220px] bg-liceqit-slide-background rounded-[20px] p-4 relative"
+            className={`w-full max-w-[160px] sm:max-w-[200px] min-h-[180px] sm:min-h-[220px] rounded-[20px] p-4 relative ${
+              ColorMapper[benefit?.id]
+            }`}
             key={`amrutveni-liceqit-benefit-id-${benefit?.id}`}
           >
             <p className="text-base sm:text-lg">{benefit?.header}</p>

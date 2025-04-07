@@ -2,54 +2,148 @@
 
 import { BuyNowButton } from "@/features/liceqit/common/buynow-button";
 import React from "react";
-import LICEQIT_DATA from "@/lib/constants/liceqit/liceqit.json";
 import classNames from "classnames";
 import { useDataContext } from "@/lib/utils/context/useDataContext";
+import { motion } from "motion/react";
 
 export const HeroSection = () => {
-  const { heroRef } = useDataContext();
+  const { heroRef, isPageLoaded } = useDataContext();
 
   return (
-    <div className="min-h-[calc(100vh-60px)] p-4" ref={heroRef}>
-      <div
-        className={classNames({
-          "w-full h-full min-h-[calc(100vh-92px)] rounded-2xl bg-cover bg-center relative":
-            true,
-          "bg-[url('/amrutveni-landing-liceqit/images/liceqit/hero/hero-image.png')]":
-            process.env.NODE_ENV === "production",
-          "bg-[url('/images/liceqit/hero/hero-image.png')]":
-            process.env.NODE_ENV !== "production",
-        })}
-      >
-        <div className="min-h-[calc(100vh-92px)] flex flex-col justify-between relative z-10">
-          <div className="p-4 pt-8 flex flex-col gap-1 desktop:p-8 desktop:gap-3">
-            <div className="text-white font-semibold text-3xl sm:text-5xl desktop:!text-7xl desktop:font-medium relative overflow-hidden leading-tight">
-              <h1 className="text-transparent">Introducing LiceQit</h1>
-              <h1 className="absolute top-full left-0 hero-header border border-transparent">
-                Introducing LiceQit
-              </h1>
+    <>
+      <div className="min-h-[calc(100dvh-60px)] p-4 lg:hidden" ref={heroRef}>
+        <div
+          className={classNames({
+            "w-full h-full min-h-[calc(100dvh-92px)] rounded-4xl bg-cover bg-center relative p-4 flex items-end justify-center":
+              true,
+            "bg-[url('/amrutveni-landing-liceqit/images/liceqit/hero/hero.png')]":
+              process.env.NODE_ENV === "production",
+            "bg-[url('/images/liceqit/hero/hero-mobile.png')]":
+              process.env.NODE_ENV !== "production",
+          })}
+        >
+          <div className="flex flex-col gap-12 relative z-10 mb-6">
+            <div className="flex flex-col items-center justify-center">
+              <div className="relative">
+                <h1 className="text-[36px] text-white font-semibold">
+                  No More Itch,
+                </h1>
+                <svg
+                  width="70"
+                  height="46"
+                  viewBox="0 0 70 46"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute top-[-20%] right-[-1%] w-[82px] h-[76px]"
+                >
+                  <motion.path
+                    initial={{ pathLength: 0 }}
+                    animate={{ pathLength: isPageLoaded ? 1 : 0 }}
+                    transition={{ duration: 1 }}
+                    viewport={{ once: true }}
+                    d="M49.3469 8.46043C21.4231 0.00187031 0.679144 16.5096 1.86844 28.0498C5.27343 61.0897 79.6134 38.383 66.6296 11.6774C61.5909 1.3137 35.441 -3.33385 8.10946 10.0583"
+                    stroke="#FFA375"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </div>
+              <div className="relative">
+                <h1 className="text-[36px] text-white font-semibold">
+                  No More Lice.
+                </h1>
+                <svg
+                  width="61"
+                  height="26"
+                  viewBox="0 0 61 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute top-[80%] right-[-5%] w-[76px] h-[28px]"
+                >
+                  <motion.path
+                    initial={{ pathLength: 0 }}
+                    animate={{ pathLength: isPageLoaded ? 1 : 0 }}
+                    transition={{ duration: 1 }}
+                    viewport={{ once: true }}
+                    d="M0.960538 13.4614C0.960538 13.4614 54.1746 -0.816016 55.9458 1.97433C57.7169 4.76469 1.76664 16.1297 3.2801 23.2622C4.79355 30.3947 60.388 9.6345 60.388 9.6345"
+                    stroke="#FFA375"
+                    strokeWidth="2"
+                  />
+                </svg>
+              </div>
             </div>
-            <p className="text-white font-medium text-sm uppercase desktop:text-lg hero-sub-content">
-              beautiful, lice free hair
-            </p>
+            <div className="flex items-center justify-center w-[80%] mx-auto">
+              <button className="min-w-[150px] min-h-[40px] bg-white text-liceqit-foreground rounded-full font-medium text-sm">
+                Try LiceQit Today
+              </button>
+            </div>
           </div>
-          <div className="p-4 w-full max-w-[calc(100vw-194px)]">
-            <p className="text-[#f2f2f2] text-sm desktop:text-base desktop:font-medium max-w-[500px] hero-sub-content">
-              Amrutveni LiceQit removes lice while nourishing your scalp.
-              Herbal, chemical-free, and safe for all ages.
-            </p>
-          </div>
-        </div>
-        <div className="w-full h-full bg-black/35 absolute top-0 left-0 rounded-2xl z-0"></div>
-        <div className="flex items-center justify-center z-10 absolute right-0 bottom-0 border-liceqit-background border-t-[8px] border-l-[8px] rounded-tl-3xl pt-1 pl-1 bg-liceqit-background">
-          <BuyNowButton
-            message={`Buy Now at ₹${LICEQIT_DATA?.liceqit?.basic?.price}`}
-            className="min-w-[150px] min-h-[40px] hero-sub-content"
-          />
-          <div className="w-5 h-5 bg-transparent shadow-[6px_6px_#fff] absolute top-[-28px] right-0 rounded-br-2xl"></div>
-          <div className="w-5 h-5 bg-transparent shadow-[6px_4px_#fff] absolute bottom-0 right-[173px] rounded-br-2xl"></div>
+          <div className="w-full h-full bg-black/25 absolute top-0 left-0 rounded-4xl z-0"></div>
         </div>
       </div>
-    </div>
+
+      {/* Desktop Screen */}
+      <div className="hidden lg:flex mt-24 flex-col gap-16">
+        <div className="flex flex-col gap-12 relative">
+          <div className="flex flex-col items-center justify-center">
+            <div className="relative">
+              <h1 className="text-[72px] text-[#a5a5a5]">
+                No More <span className="text-liceqit-foreground">Itch,</span>
+              </h1>
+              <svg
+                width="70"
+                height="46"
+                viewBox="0 0 70 46"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute top-[-5%] right-[-3%] w-[156px] h-auto"
+              >
+                <motion.path
+                  initial={{ pathLength: 0 }}
+                  animate={{ pathLength: isPageLoaded ? 1 : 0 }}
+                  transition={{ duration: 1 }}
+                  viewport={{ once: true }}
+                  d="M49.3469 8.46043C21.4231 0.00187031 0.679144 16.5096 1.86844 28.0498C5.27343 61.0897 79.6134 38.383 66.6296 11.6774C61.5909 1.3137 35.441 -3.33385 8.10946 10.0583"
+                  stroke="#FFA375"
+                  strokeWidth="2"
+                  className="hero-svg"
+                />
+              </svg>
+            </div>
+            <div className="relative">
+              <h1 className="text-[72px] text-[#a5a5a5]">
+                No More <span className="text-liceqit-foreground">Lice.</span>
+              </h1>
+              <svg
+                width="61"
+                height="26"
+                viewBox="0 0 61 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute top-[80%] right-[-5%] w-[126px] h-auto"
+              >
+                <motion.path
+                  initial={{ pathLength: 0 }}
+                  animate={{ pathLength: isPageLoaded ? 1 : 0 }}
+                  transition={{ duration: 1 }}
+                  viewport={{ once: true }}
+                  d="M0.960538 13.4614C0.960538 13.4614 54.1746 -0.816016 55.9458 1.97433C57.7169 4.76469 1.76664 16.1297 3.2801 23.2622C4.79355 30.3947 60.388 9.6345 60.388 9.6345"
+                  stroke="#FFA375"
+                  strokeWidth="2"
+                  className="hero-svg"
+                />
+              </svg>
+            </div>
+          </div>
+          <div className="flex items-center justify-center w-[80%] mx-auto">
+            <BuyNowButton message="Try Liceqit Today" showIcon={false} />
+          </div>
+          <div className="absolute w-24 h-24 rounded-full top-[-5%] left-[5%] bg-[url('/images/liceqit/hero/lice.jpg')] bg-center bg-cover" />
+          <div className="absolute w-24 h-24 rounded-full top-[-5%] right-[5%] bg-[url('/images/liceqit/bottle/bottle.png')] bg-center bg-cover" />
+          <div className="absolute w-24 h-24 rounded-full top-[50%] left-[15%] bg-[url('/images/liceqit/hero/boy.jpg')] bg-center bg-cover" />
+          <div className="absolute w-24 h-24 rounded-full top-[50%] right-[15%] bg-[url('/images/liceqit/hero/girl.jpg')] bg-center bg-cover" />
+        </div>
+        <div className="w-[75%] h-[60dvh] mx-auto rounded-4xl bg-[url('/images/liceqit/hero/hero-new.png')] bg-center bg-cover"></div>
+      </div>
+    </>
   );
 };

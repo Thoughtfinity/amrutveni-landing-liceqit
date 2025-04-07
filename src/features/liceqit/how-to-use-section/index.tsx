@@ -42,7 +42,7 @@ export const HowToUseSection = () => {
             initial="hidden"
             whileInView="show"
             transition={{ delay: 0.3 }}
-            viewport={{ amount: "all", once: true }}
+            viewport={{ amount: 0.5, once: true }}
             className="w-full max-w-[350px] min-h-[300px] flex flex-col items-center justify-center rounded-3xl shadow-xl"
             key={`amrutveni-liceqit-how-to-use-id-${step?.id}`}
           >
@@ -69,7 +69,7 @@ export const HowToUseSection = () => {
         transition={{
           staggerChildren: 0.2,
         }}
-        viewport={{ amount: 0.8, once: true }}
+        viewport={{ amount: 0.5, once: true }}
         className="hidden lg:flex justify-center gap-9 flex-wrap"
       >
         {LICEQIT_DATA?.liceqit?.howToUse?.map((step) => (

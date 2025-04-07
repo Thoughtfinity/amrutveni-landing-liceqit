@@ -9,11 +9,13 @@ export const SlideUpAnimator = ({
   className,
   duration = 1.5,
   delay = 0.1,
+  viewport = 0.8,
 }: {
   children: ReactNode;
   className?: string;
   duration?: number;
   delay?: number;
+  viewport?: number;
 }) => {
   return (
     <motion.div
@@ -26,7 +28,7 @@ export const SlideUpAnimator = ({
         bounce: 0,
         delay: delay,
       }}
-      viewport={{ amount: 0.8, once: true }}
+      viewport={{ amount: viewport, once: true }}
       className={className}
     >
       {children}

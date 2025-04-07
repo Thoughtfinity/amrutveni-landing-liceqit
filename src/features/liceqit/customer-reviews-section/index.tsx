@@ -89,7 +89,7 @@ export const CustomerReviewsSection = () => {
               className={classNames({
                 "w-10 h-10 rounded-full border flex items-center justify-center cursor-pointer":
                   true,
-                "relative after:absolute after:w-full after:h-full after:bg-liceqit-primary after:rounded-full after:left-0 after:translate-y-full hover:after:translate-y-0 after:transition-transform after:duration-300 group transition-colors duration-300 hover:border-liceqit-primary hover:text-white overflow-hidden":
+                "relative after:absolute after:w-full after:h-full after:bg-liceqit-foreground after:rounded-full after:left-0 after:translate-y-full hover:after:translate-y-0 after:transition-transform after:duration-300 group transition-colors duration-300 hover:border-liceqit-primary hover:text-white overflow-hidden":
                   !isMobile,
               })}
               onClick={() => swiperRef?.current?.slidePrev()}
@@ -100,7 +100,7 @@ export const CustomerReviewsSection = () => {
               className={classNames({
                 "w-10 h-10 rounded-full border flex items-center justify-center cursor-pointer":
                   true,
-                "relative after:absolute after:w-full after:h-full after:bg-liceqit-primary after:rounded-full after:left-0 after:translate-y-full hover:after:translate-y-0 after:transition-transform after:duration-300 group transition-colors duration-300 hover:border-liceqit-primary hover:text-white overflow-hidden":
+                "relative after:absolute after:w-full after:h-full after:bg-liceqit-foreground after:rounded-full after:left-0 after:translate-y-full hover:after:translate-y-0 after:transition-transform after:duration-300 group transition-colors duration-300 hover:border-liceqit-primary hover:text-white overflow-hidden":
                   !isMobile,
               })}
               onClick={() => swiperRef?.current?.slideNext()}

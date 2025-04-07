@@ -16,6 +16,7 @@ export const DataContext = createContext<DataContextType | undefined>(
 
 export const DataProvider = ({ children }: { children: ReactNode }) => {
   const [isInView, setIsInView] = useState<boolean>(true);
+  const [isPageLoaded, setIsPageLoaded] = useState<boolean>(false);
   const heroRef = useRef<HTMLDivElement | null>(null);
   const footerRef = useRef<HTMLDivElement | null>(null);
 
@@ -36,6 +37,8 @@ export const DataProvider = ({ children }: { children: ReactNode }) => {
         isInView,
         heroRef,
         footerRef,
+        isPageLoaded,
+        setIsPageLoaded,
       }}
     >
       {children}

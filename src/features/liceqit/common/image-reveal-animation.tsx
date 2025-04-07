@@ -18,7 +18,7 @@ export const ImageRevealer = ({
   revealerClassName?: string;
 }) => {
   return (
-    <motion.div className={`relative ${className}`}>
+    <motion.div className={`relative ${className} overflow-hidden`}>
       {children}
       <motion.div
         variants={imageRevealVariant}

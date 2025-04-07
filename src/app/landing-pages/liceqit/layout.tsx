@@ -7,16 +7,18 @@ import React from "react";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <section className="bg-liceqit-background text-liceqit-foreground min-h-screen">
-      <div className="w-full max-w-[1620px] mx-auto">
+    <section className="bg-liceqit-background text-liceqit-foreground min-h-[100dvh]">
+      <>
         <DataProvider>
-          <Navbar />
-          <BottomNavbar />
-          {children}
-          <Footer />
+          <div className="w-full max-w-[1620px] mx-auto">
+            <Navbar />
+            <BottomNavbar />
+            {children}
+            <Footer />
+          </div>
+          <PreLoader />
         </DataProvider>
-      </div>
-      <PreLoader />
+      </>
     </section>
   );
 }
