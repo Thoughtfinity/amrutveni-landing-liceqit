@@ -84,7 +84,7 @@ export const HowItWorksSection = () => {
           <source
             src={
               process.env.NODE_ENV === "production"
-                ? "/amrutveni-landing-liceqit$/videos/liceqit/bottle/bottle-ios.mov"
+                ? "/amrutveni-landing-liceqit/videos/liceqit/bottle/bottle-ios.mov"
                 : "/videos/liceqit/bottle/bottle-ios.mov"
             }
             type='video/mp4; codecs="hvc1"'
@@ -92,7 +92,7 @@ export const HowItWorksSection = () => {
           <source
             src={
               process.env.NODE_ENV === "production"
-                ? "/amrutveni-landing-liceqit$/videos/liceqit/bottle/bottle-common.webm"
+                ? "/amrutveni-landing-liceqit/videos/liceqit/bottle/bottle-common.webm"
                 : "/videos/liceqit/bottle/bottle-common.webm"
             }
             type="video/webm"
