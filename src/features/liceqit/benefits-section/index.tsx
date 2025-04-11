@@ -1,40 +1,22 @@
 import React from "react";
-import {
-  Blend,
-  BugOff,
-  Flower,
-  ShieldCheck,
-  Sprout,
-  Waves,
-  LucideIcon,
-} from "lucide-react";
 import LICEQIT_DATA from "@/lib/constants/liceqit/liceqit.json";
 import { SlideUpAnimator } from "../common/slideup-animation";
+import BenefitOne from "@/../public/images/liceqit/benefit/benefit-1.jpeg";
+import BenefitTwo from "@/../public/images/liceqit/benefit/benefit-2.jpg";
+import BenefitThree from "@/../public/images/liceqit/benefit/benefit-3.jpg";
+import BenefitFour from "@/../public/images/liceqit/benefit/benefit-4.jpeg";
+import BenefitFive from "@/../public/images/liceqit/benefit/benefit-5.jpeg";
+import BenefitSix from "@/../public/images/liceqit/benefit/benefit-6.jpg";
+import Image, { StaticImageData } from "next/image";
 
 export const BenefitsSection = () => {
-  const IconMap: Record<string, LucideIcon> = {
-    Blend: Blend,
-    BugOff: BugOff,
-    Flower: Flower,
-    ShieldCheck: ShieldCheck,
-    Sprout: Sprout,
-    Waves: Waves,
-  };
-
-  const ColorMapper: Record<number, string> = {
-    1: "bg-[#ECC8AF]",
-    2: "bg-[#CDDDDD]",
-    3: "bg-[#BDD5EA]",
-    4: "bg-[#9CC5A1]",
-    5: "bg-[#ACD7EC]",
-    6: "bg-[#C3D898]",
-  };
-
-  const getIconComponent = (iconName: string) => {
-    const IconComponent = IconMap[iconName] || Waves;
-    return (
-      <IconComponent className="w-8 h-8 sm:w-10 sm:h-10 text-liceqit-deep-grey" />
-    );
+  const ImageMapper: Record<number, StaticImageData> = {
+    1: BenefitOne,
+    2: BenefitTwo,
+    3: BenefitThree,
+    4: BenefitFour,
+    5: BenefitFive,
+    6: BenefitSix,
   };
 
   return (
@@ -44,19 +26,28 @@ export const BenefitsSection = () => {
           Why use LiceQit?
         </h2>
       </SlideUpAnimator>
-      <div className="flex items-center justify-center flex-wrap gap-8">
+      <div className="flex items-start justify-center flex-wrap gap-4 sm:gap-x-10">
         {LICEQIT_DATA?.liceqit?.benefits?.map((benefit) => (
           <SlideUpAnimator
-            className={`w-full max-w-[160px] sm:max-w-[200px] min-h-[180px] sm:min-h-[220px] rounded-[20px] p-4 relative ${
-              ColorMapper[benefit?.id]
-            }`}
+            className="w-full max-w-[172px] sm:max-w-[196px] flex flex-col gap-6 items-center justify-center group"
             key={`amrutveni-liceqit-benefit-id-${benefit?.id}`}
           >
-            <p className="text-base sm:text-lg">{benefit?.header}</p>
-            <div className="absolute w-14 h-14 sm:w-16 sm:h-16 bg-liceqit-background right-0 bottom-0 rounded-tl-[20px] flex items-center justify-center">
-              {getIconComponent(benefit?.image)}
-              <div className="absolute w-6 h-6 bg-transparent shadow-[6px_6px_#fff] rounded-br-[20px] right-0 top-[-24px]"></div>
-              <div className="absolute w-6 h-6 bg-transparent shadow-[6px_6px_#fff] rounded-br-[20px] right-[56px] sm:right-[64px] bottom-0"></div>
+            <div className="flex items-center justify-center border py-6 relative">
+              <Image
+                src={ImageMapper[benefit?.id]}
+                alt="featured"
+                className="w-[50%] rounded-lg z-10 transition-all duration-300 group-hover:shadow-2xl group-hover:scale-110"
+              />
+              <div className="absolute w-[75%] h-[75%] bg-white top-[-1px] right-[-1px]" />
+              <div className="absolute w-[75%] h-[75%] bg-white bottom-[-1px] left-[-1px]" />
+            </div>
+            <div className="flex flex-col gap-2 px-2 pb-4">
+              <p className="text-sm font-medium sm:text-base text-center">
+                {benefit?.header}
+              </p>
+              <p className="text-xs sm:text-sm text-liceqit-charcoal-grey text-center">
+                {benefit?.description}
+              </p>
             </div>
           </SlideUpAnimator>
         ))}

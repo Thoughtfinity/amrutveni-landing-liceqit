@@ -11,10 +11,10 @@ export const HeroSection = () => {
 
   return (
     <>
-      <div className="min-h-[calc(100dvh-60px)] p-4 lg:hidden" ref={heroRef}>
+      <div className="min-h-[calc(100vh-60px)] p-4 lg:hidden" ref={heroRef}>
         <div
           className={classNames({
-            "w-full h-full min-h-[calc(100dvh-92px)] rounded-4xl bg-cover bg-center relative p-4 flex items-end justify-center":
+            "w-full h-full min-h-[calc(100vh-132px)] rounded-4xl bg-cover bg-center relative p-4 flex items-end justify-center":
               true,
             "bg-[url('/amrutveni-landing-liceqit/images/liceqit/hero/hero-mobile.png')]":
               process.env.NODE_ENV === "production",
@@ -139,7 +139,7 @@ export const HeroSection = () => {
           </div>
           <div
             className={classNames({
-              "absolute w-24 h-24 rounded-full top-[-5%] left-[5%] bg-center bg-cover":
+              "absolute w-24 h-24 rounded-full top-[-5%] left-[5%] bg-center bg-cover transition-all duration-300 hover:top-[-7%] hover:shadow-2xl":
                 true,
               "bg-[url('/amrutveni-landing-liceqit/images/liceqit/hero/lice.jpg')]":
                 process.env.NODE_ENV === "production",
@@ -149,7 +149,7 @@ export const HeroSection = () => {
           />
           <div
             className={classNames({
-              "absolute w-24 h-24 rounded-full top-[-5%] right-[5%] bg-center bg-cover":
+              "absolute w-24 h-24 rounded-full top-[-5%] right-[5%] bg-center bg-cover transition-all duration-300 hover:top-[-7%] hover:shadow-2xl":
                 true,
               "bg-[url('/amrutveni-landing-liceqit/images/liceqit/bottle/bottle.png')]":
                 process.env.NODE_ENV === "production",
@@ -159,7 +159,7 @@ export const HeroSection = () => {
           />
           <div
             className={classNames({
-              "absolute w-24 h-24 rounded-full top-[50%] left-[15%] bg-center bg-cover":
+              "absolute w-24 h-24 rounded-full top-[50%] left-[15%] bg-center bg-cover transition-all duration-300 hover:top-[48%] hover:shadow-2xl":
                 true,
               "bg-[url('/amrutveni-landing-liceqit/images/liceqit/hero/boy.jpg')]":
                 process.env.NODE_ENV === "production",
@@ -169,7 +169,7 @@ export const HeroSection = () => {
           />
           <div
             className={classNames({
-              "absolute w-24 h-24 rounded-full top-[50%] right-[15%] bg-center bg-cover":
+              "absolute w-24 h-24 rounded-full top-[50%] right-[15%] bg-center bg-cover transition-all duration-300 hover:top-[48%] hover:shadow-2xl":
                 true,
               "bg-[url('/amrutveni-landing-liceqit/images/liceqit/hero/girl.jpg')]":
                 process.env.NODE_ENV === "production",
@@ -180,7 +180,7 @@ export const HeroSection = () => {
         </div>
         <div
           className={classNames({
-            "w-[75%] h-[60dvh] mx-auto rounded-4xl bg-center bg-cover": true,
+            "w-[75%] h-[60vh] mx-auto rounded-4xl bg-center bg-cover": true,
             "bg-[url('/amrutveni-landing-liceqit/images/liceqit/hero/hero-desktop.png')]":
               process.env.NODE_ENV === "production",
             "bg-[url('/images/liceqit/hero/hero-desktop.png')]":

@@ -7,6 +7,8 @@ import { CustomEase } from "gsap/all";
 import Logo from "@/../public/logo/logo.svg";
 import Image from "next/image";
 import { useDataContext } from "@/lib/utils/context/useDataContext";
+import { motion } from "motion/react";
+import { dotVariants } from "@/lib/variants/liceqit";
 
 export const PreLoader: React.FC = () => {
   gsap.registerPlugin(CustomEase);
@@ -50,6 +52,45 @@ export const PreLoader: React.FC = () => {
       }}
     >
       <Image src={Logo} alt="Logo" className="w-36" />
+      <motion.div className="flex items-center justify-center gap-3 mt-8">
+        <motion.div
+          variants={dotVariants}
+          animate="animate"
+          transition={{
+            duration: 1.2,
+            repeat: Infinity,
+            ease: "easeInOut",
+            times: [0, 0.5, 1],
+          }}
+          className="w-2 h-2 bg-liceqit-primary rounded-full"
+        ></motion.div>
+
+        <motion.div
+          variants={dotVariants}
+          animate="animate"
+          transition={{
+            duration: 1.2,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 0.2,
+            times: [0, 0.5, 1],
+          }}
+          className="w-2 h-2 bg-liceqit-primary rounded-full"
+        ></motion.div>
+
+        <motion.div
+          variants={dotVariants}
+          animate="animate"
+          transition={{
+            duration: 1.2,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 0.4,
+            times: [0, 0.5, 1],
+          }}
+          className="w-2 h-2 bg-liceqit-primary rounded-full"
+        ></motion.div>
+      </motion.div>
     </div>
   );
 };

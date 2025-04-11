@@ -7,7 +7,7 @@ import React from "react";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <section className="bg-liceqit-background text-liceqit-foreground min-h-[100dvh]">
+    <section className="bg-liceqit-background text-liceqit-foreground min-h-[100vh]">
       <>
         <DataProvider>
           <div className="w-full max-w-[1620px] mx-auto">

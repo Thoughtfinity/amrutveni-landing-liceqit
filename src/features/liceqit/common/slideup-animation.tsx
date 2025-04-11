@@ -2,7 +2,7 @@
 
 import React, { ReactNode } from "react";
 import { motion } from "motion/react";
-import { slideUpVariant } from "@/lib/variants/liceqit";
+import { slideUpVariants } from "@/lib/variants/liceqit";
 
 export const SlideUpAnimator = ({
   children,
@@ -19,7 +19,7 @@ export const SlideUpAnimator = ({
 }) => {
   return (
     <motion.div
-      variants={slideUpVariant}
+      variants={slideUpVariants}
       initial="initial"
       whileInView="animate"
       transition={{

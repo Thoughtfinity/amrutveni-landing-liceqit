@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@lottiefiles/dotlottie-react": "^0.13.3",
     "classnames": "^2.5.1",
     "gsap": "^3.12.7",
     "lucide-react": "^0.479.0",

@@ -16,7 +16,7 @@ export const Footer = () => {
 
   return (
     <div
-      className="w-full max-w-[1620px] px-4 desktop:px-16 pt-10 pb-4 bg-liceqit-primary mt-48 rounded-t-[32px] desktop:rounded-t-[56px] flex flex-col gap-8 md:gap-16"
+      className="w-full max-w-[1620px] px-4 desktop:px-16 pt-10 pb-4 bg-liceqit-primary mt-24 rounded-t-[32px] desktop:rounded-t-[56px] flex flex-col gap-8 md:gap-16"
       ref={footerRef}
     >
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
@@ -77,25 +77,25 @@ export const Footer = () => {
           <div className="grid grid-cols-2 gap-2">
             <div className="flex flex-col gap-1.5">
               <Link
-                href={"#"}
+                href={"https://amrutveni.com/"}
                 className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base relative after:absolute after:w-full after:h-px after:bg-white after:left-0 after:right-0 after:bottom-0 after:rounded-full after:origin-[100%_100%] after:scale-x-0 hover:after:origin-[0%_0%] hover:after:scale-x-100 after:transition-transform after:duration-300"
               >
                 Home
               </Link>
               <Link
-                href={"#"}
+                href={"https://amrutveni.com/our-story"}
                 className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base relative after:absolute after:w-full after:h-px after:bg-white after:left-0 after:right-0 after:bottom-0 after:rounded-full after:origin-[100%_100%] after:scale-x-0 hover:after:origin-[0%_0%] hover:after:scale-x-100 after:transition-transform after:duration-300"
               >
                 About
               </Link>
               <Link
-                href={"#"}
+                href={"https://amrutveni.com/contact"}
                 className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base relative after:absolute after:w-full after:h-px after:bg-white after:left-0 after:right-0 after:bottom-0 after:rounded-full after:origin-[100%_100%] after:scale-x-0 hover:after:origin-[0%_0%] hover:after:scale-x-100 after:transition-transform after:duration-300"
               >
                 Contact
               </Link>
               <Link
-                href={"#"}
+                href={"https://amrutveni.com/products"}
                 className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base relative after:absolute after:w-full after:h-px after:bg-white after:left-0 after:right-0 after:bottom-0 after:rounded-full after:origin-[100%_100%] after:scale-x-0 hover:after:origin-[0%_0%] hover:after:scale-x-100 after:transition-transform after:duration-300"
               >
                 Product
@@ -103,19 +103,19 @@ export const Footer = () => {
             </div>
             <div className="flex flex-col gap-1.5">
               <Link
-                href={"#"}
+                href={"https://amrutveni.com/policy/privacy-policy"}
                 className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base relative after:absolute after:w-full after:h-px after:bg-white after:left-0 after:right-0 after:bottom-0 after:rounded-full after:origin-[100%_100%] after:scale-x-0 hover:after:origin-[0%_0%] hover:after:scale-x-100 after:transition-transform after:duration-300"
               >
                 Privacy Policy
               </Link>
               <Link
-                href={"#"}
+                href={"https://amrutveni.com/policy/refund-policy"}
                 className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base relative after:absolute after:w-full after:h-px after:bg-white after:left-0 after:right-0 after:bottom-0 after:rounded-full after:origin-[100%_100%] after:scale-x-0 hover:after:origin-[0%_0%] hover:after:scale-x-100 after:transition-transform after:duration-300"
               >
                 Refund Policy
               </Link>
               <Link
-                href={"#"}
+                href={"https://amrutveni.com/policy/terms-and-conditions"}
                 className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base relative after:absolute after:w-full after:h-px after:bg-white after:left-0 after:right-0 after:bottom-0 after:rounded-full after:origin-[100%_100%] after:scale-x-0 hover:after:origin-[0%_0%] hover:after:scale-x-100 after:transition-transform after:duration-300"
               >
                 Terms and Conditions
@@ -154,19 +154,22 @@ export const Footer = () => {
         </div>
         <div className="flex items-center justify-end gap-6">
           <Link
-            href={"#"}
+            href={"https://www.facebook.com/amrutveni/"}
+            target="_blank"
             className="hover:scale-125 transition-transform duration-300"
           >
             <Facebook className="text-white w-6" />
           </Link>
           <Link
-            href={"#"}
+            href={"https://www.instagram.com/amrutveni/"}
+            target="_blank"
             className="hover:scale-125 transition-transform duration-300"
           >
             <Instagram className="text-white w-6" />
           </Link>
           <Link
-            href={"#"}
+            href={"https://www.youtube.com/c/Amrutveni"}
+            target="_blank"
             className="hover:scale-125 transition-transform duration-300"
           >
             <Youtube className="text-white w-6" />

@@ -2,7 +2,7 @@
 
 import React, { ReactNode } from "react";
 import { motion } from "motion/react";
-import { imageRevealVariant } from "@/lib/variants/liceqit";
+import { imageRevealVariants } from "@/lib/variants/liceqit";
 
 export const ImageRevealer = ({
   children,
@@ -21,7 +21,7 @@ export const ImageRevealer = ({
     <motion.div className={`relative ${className} overflow-hidden`}>
       {children}
       <motion.div
-        variants={imageRevealVariant}
+        variants={imageRevealVariants}
         initial="initial"
         whileInView="animate"
         transition={{

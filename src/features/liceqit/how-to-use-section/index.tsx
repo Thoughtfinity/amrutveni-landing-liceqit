@@ -6,11 +6,8 @@ import LICEQIT_DATA from "@/lib/constants/liceqit/liceqit.json";
 import classNames from "classnames";
 import { motion } from "motion/react";
 import { SlideUpAnimator } from "../common/slideup-animation";
-import {
-  scaleUpContainerVariant,
-  scaleUpItemVariant,
-} from "@/lib/variants/liceqit";
 import { OpacityAnimator } from "../common/opacity-animation";
+import { howToUseStepsVariants } from "@/lib/variants/liceqit";
 
 const StepImageMapper: Record<number, string> = {
   1:
@@ -32,17 +29,13 @@ export const HowToUseSection = () => {
     <div className="px-4 desktop:px-16 flex flex-col gap-16">
       <SlideUpAnimator>
         <h2 className="text-center font-medium text-2xl desktop:text-4xl">
-          How to use?
+          How to use LiceQit?
         </h2>
       </SlideUpAnimator>
       <div className="flex lg:hidden items-center justify-center gap-9 flex-wrap">
         {LICEQIT_DATA?.liceqit?.howToUse?.map((step) => (
-          <motion.div
-            variants={scaleUpItemVariant}
-            initial="hidden"
-            whileInView="show"
-            transition={{ delay: 0.3 }}
-            viewport={{ amount: 0.5, once: true }}
+          <SlideUpAnimator
+            viewport={0.3}
             className="w-full max-w-[350px] min-h-[300px] flex flex-col items-center justify-center rounded-3xl shadow-xl"
             key={`amrutveni-liceqit-how-to-use-id-${step?.id}`}
           >
@@ -59,22 +52,24 @@ export const HowToUseSection = () => {
                 {step?.description}
               </p>
             </div>
-          </motion.div>
+          </SlideUpAnimator>
         ))}
       </div>
       <motion.div
-        variants={scaleUpContainerVariant}
         initial="hidden"
         whileInView="show"
         transition={{
-          staggerChildren: 0.2,
+          staggerChildren: 0.3,
         }}
-        viewport={{ amount: 0.5, once: true }}
+        viewport={{ amount: 0.8, once: true }}
         className="hidden lg:flex justify-center gap-9 flex-wrap"
       >
         {LICEQIT_DATA?.liceqit?.howToUse?.map((step) => (
           <motion.div
-            variants={scaleUpItemVariant}
+            variants={howToUseStepsVariants}
+            transition={{
+              duration: 0.3,
+            }}
             className={classNames({
               "w-full max-w-[350px] min-h-[300px] flex flex-col items-center justify-center rounded-3xl shadow-xl group":
                 true,

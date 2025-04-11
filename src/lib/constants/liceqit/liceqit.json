@@ -35,7 +35,7 @@
       {
         "id": 2,
         "header": "Comb",
-        "description": "Use a fine-toothed lice comb to remove dead lice and nits from the hair.",
+        "description": "Use a fine-toothed lice comb to remove lice and nits from the hair.",
         "image": "/images/liceqit/how-to-use/step-1.png"
       },
       {
@@ -145,6 +145,11 @@
         "id": 6,
         "thumbnail": "/videos/liceqit/reel-thumbnail/reel-6.webm",
         "video": "/videos/liceqit/reels/reel-6.mp4"
+      },
+      {
+        "id": 7,
+        "thumbnail": "/videos/liceqit/reel-thumbnail/reel-7.webm",
+        "video": "/videos/liceqit/reels/reel-7.mp4"
       }
     ],
     "faq": [
@@ -163,6 +168,55 @@
         "question": "Does it have a strong smell like chemical lice treatments?",
         "answer": "No, Amrutveni LiceQit has a mild, herbal fragrance that leaves hair smelling fresh and clean."
       }
-    ]
+    ],
+    "detailedInfo": {
+      "composition": [
+        {
+          "id": 1,
+          "heading": "Cocos Nucifera Oil (Coconut Oil)",
+          "description": "Deeply nourishes and adds shine while acting as a base for active ingredients."
+        },
+        {
+          "id": 2,
+          "heading": "Pongamia Pinnata Oil Extract",
+          "description": "Offers antiseptic properties, combating lice and scalp irritation."
+        },
+        {
+          "id": 3,
+          "heading": "Azadirachta Indica (Neem)",
+          "description": "A powerful natural pesticide with antibacterial and antifungal properties, effectively targeting lice."
+        },
+        {
+          "id": 4,
+          "heading": "Ricinus Communis (Castor Oil)",
+          "description": "Promotes hair strength and reduces breakage while soothing the scalp."
+        },
+        {
+          "id": 5,
+          "heading": "Thymus Vulgaris (Thyme)",
+          "description": "Provides anti-inflammatory benefits and ensures a clean, healthy scalp."
+        },
+        {
+          "id": 6,
+          "heading": "Illicium Verum (Star Anise)",
+          "description": "Offers anti-parasitic properties while leaving a refreshing fragrance."
+        },
+        {
+          "id": 7,
+          "heading": "Andrographis Paniculata",
+          "description": "Renowned for its detoxifying and cleansing qualities."
+        },
+        {
+          "id": 8,
+          "heading": "Mentha Piperita (Peppermint)",
+          "description": "Refreshes the scalp with a cooling effect."
+        },
+        {
+          "id": 9,
+          "heading": "Cinnamomum Camphora (Camphor)",
+          "description": "Enhances blood circulation and reduces itching."
+        }
+      ]
+    }
   }
 }

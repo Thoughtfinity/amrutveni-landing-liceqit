@@ -4,7 +4,7 @@ import React from "react";
 import LICEQIT_DATA from "@/lib/constants/liceqit/liceqit.json";
 import { useDataContext } from "@/lib/utils/context/useDataContext";
 import { motion, AnimatePresence } from "motion/react";
-import { bottomNavVariant } from "@/lib/variants/liceqit";
+import { bottomNavVariants } from "@/lib/variants/liceqit";
 
 export const BottomNavbar = () => {
   const { isInView } = useDataContext();
@@ -13,7 +13,7 @@ export const BottomNavbar = () => {
     <AnimatePresence>
       {!isInView && (
         <motion.button
-          variants={bottomNavVariant}
+          variants={bottomNavVariants}
           initial="hidden"
           animate="inView"
           exit="exit"
