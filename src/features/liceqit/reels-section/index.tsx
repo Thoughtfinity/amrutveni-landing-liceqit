@@ -102,7 +102,7 @@ export const ReelsSection = () => {
             >
               <div>
                 <video
-                  className="w-full h-full"
+                  className="w-full h-full scale-105"
                   loop={true}
                   controls={false}
                   autoPlay={true}
@@ -115,7 +115,7 @@ export const ReelsSection = () => {
                         ? `/amrutveni-landing-liceqit${item?.thumbnail}`
                         : item?.thumbnail
                     }
-                    type="video/webm"
+                    type="video/mp4"
                   />
                   Sorry, your browser doesn&apos;t support embedded videos.
                 </video>
@@ -131,7 +131,7 @@ export const ReelsSection = () => {
             >
               <div>
                 <video
-                  className="w-full h-full"
+                  className="w-full h-full scale-105"
                   loop={true}
                   controls={false}
                   autoPlay={true}
@@ -144,7 +144,7 @@ export const ReelsSection = () => {
                         ? `/amrutveni-landing-liceqit${item?.thumbnail}`
                         : item?.thumbnail
                     }
-                    type="video/webm"
+                    type="video/mp4"
                   />
                   Sorry, your browser doesn&apos;t support embedded videos.
                 </video>
