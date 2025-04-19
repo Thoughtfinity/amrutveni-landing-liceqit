@@ -1,5 +1,4 @@
 import { Footer } from "@/features/liceqit/footer";
-import { PreLoader } from "@/features/liceqit/loaders/preloader";
 import { Navbar } from "@/features/liceqit/navbar";
 import { BottomNavbar } from "@/features/liceqit/navbar/bottom-nav";
 import { DataProvider } from "@/lib/utils/context/data-context";
