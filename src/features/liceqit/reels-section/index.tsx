@@ -77,6 +77,7 @@ export const ReelsSection = () => {
             >
               <div>
                 <video
+                  preload="none"
                   className="w-full h-full scale-105"
                   loop={true}
                   controls={false}
@@ -106,6 +107,7 @@ export const ReelsSection = () => {
             >
               <div>
                 <video
+                  preload="none"
                   className="w-full h-full scale-105"
                   loop={true}
                   controls={false}
@@ -173,6 +175,7 @@ export const ReelsSection = () => {
                   </div>
                 </div>
                 <motion.video
+                  preload="none"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.3 }}

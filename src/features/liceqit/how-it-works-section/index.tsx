@@ -75,6 +75,7 @@ export const HowItWorksSection = () => {
       </div>
       <div className="flex items-center justify-center relative overflow-hidden">
         <video
+          preload="none"
           className="w-full min-[450px]:w-4/6 md:w-3/6 lg:w-2/6 h-full z-10"
           loop={true}
           controls={false}

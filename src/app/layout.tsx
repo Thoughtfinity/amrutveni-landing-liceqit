@@ -10,6 +10,9 @@ const InterSans = Inter({
 export const metadata: Metadata = {
   title: "Amrutveni Products",
   description: "Single landing pages for Amrutveni products",
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
+  ),
 };
 
 export default function RootLayout({
