@@ -41,7 +41,10 @@ export const Footer = () => {
                 className="w-full h-full outline-none text-sm"
                 placeholder="Your email"
               />
-              <button className="h-full flex items-center justify-end cursor-pointer group">
+              <button
+                aria-label="Send the email for newsletter subscription"
+                className="h-full flex items-center justify-end cursor-pointer group"
+              >
                 <ArrowRight className="w-4 group-hover:translate-x-1 group-hover:-rotate-45 transition-transform duration-300" />
               </button>
             </div>
@@ -79,24 +82,28 @@ export const Footer = () => {
               <Link
                 href={"https://amrutveni.com/"}
                 className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base relative after:absolute after:w-full after:h-px after:bg-white after:left-0 after:right-0 after:bottom-0 after:rounded-full after:origin-[100%_100%] after:scale-x-0 hover:after:origin-[0%_0%] hover:after:scale-x-100 after:transition-transform after:duration-300"
+                aria-label="Go to homepage"
               >
                 Home
               </Link>
               <Link
                 href={"https://amrutveni.com/our-story"}
                 className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base relative after:absolute after:w-full after:h-px after:bg-white after:left-0 after:right-0 after:bottom-0 after:rounded-full after:origin-[100%_100%] after:scale-x-0 hover:after:origin-[0%_0%] hover:after:scale-x-100 after:transition-transform after:duration-300"
+                aria-label="Go to about page"
               >
                 About
               </Link>
               <Link
                 href={"https://amrutveni.com/contact"}
                 className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base relative after:absolute after:w-full after:h-px after:bg-white after:left-0 after:right-0 after:bottom-0 after:rounded-full after:origin-[100%_100%] after:scale-x-0 hover:after:origin-[0%_0%] hover:after:scale-x-100 after:transition-transform after:duration-300"
+                aria-label="Go to contact page"
               >
                 Contact
               </Link>
               <Link
                 href={"https://amrutveni.com/products"}
                 className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base relative after:absolute after:w-full after:h-px after:bg-white after:left-0 after:right-0 after:bottom-0 after:rounded-full after:origin-[100%_100%] after:scale-x-0 hover:after:origin-[0%_0%] hover:after:scale-x-100 after:transition-transform after:duration-300"
+                aria-label="Go to products page"
               >
                 Product
               </Link>
@@ -105,18 +112,21 @@ export const Footer = () => {
               <Link
                 href={"https://amrutveni.com/policy/privacy-policy"}
                 className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base relative after:absolute after:w-full after:h-px after:bg-white after:left-0 after:right-0 after:bottom-0 after:rounded-full after:origin-[100%_100%] after:scale-x-0 hover:after:origin-[0%_0%] hover:after:scale-x-100 after:transition-transform after:duration-300"
+                aria-label="Open privacy policy"
               >
                 Privacy Policy
               </Link>
               <Link
                 href={"https://amrutveni.com/policy/refund-policy"}
                 className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base relative after:absolute after:w-full after:h-px after:bg-white after:left-0 after:right-0 after:bottom-0 after:rounded-full after:origin-[100%_100%] after:scale-x-0 hover:after:origin-[0%_0%] hover:after:scale-x-100 after:transition-transform after:duration-300"
+                aria-label="Open refund policy"
               >
                 Refund Policy
               </Link>
               <Link
                 href={"https://amrutveni.com/policy/terms-and-conditions"}
                 className="text-sm text-white/75 w-fit md:text-[15px] desktop:!text-base relative after:absolute after:w-full after:h-px after:bg-white after:left-0 after:right-0 after:bottom-0 after:rounded-full after:origin-[100%_100%] after:scale-x-0 hover:after:origin-[0%_0%] hover:after:scale-x-100 after:transition-transform after:duration-300"
+                aria-label="Open terms and conditions"
               >
                 Terms and Conditions
               </Link>
@@ -157,6 +167,7 @@ export const Footer = () => {
             href={"https://www.facebook.com/amrutveni/"}
             target="_blank"
             className="hover:scale-125 transition-transform duration-300"
+            aria-label="Go to Amrutveni's facebook page"
           >
             <Facebook className="text-white w-6" />
           </Link>
@@ -164,6 +175,7 @@ export const Footer = () => {
             href={"https://www.instagram.com/amrutveni/"}
             target="_blank"
             className="hover:scale-125 transition-transform duration-300"
+            aria-label="Go to Amrutveni's instagram page"
           >
             <Instagram className="text-white w-6" />
           </Link>
@@ -171,6 +183,7 @@ export const Footer = () => {
             href={"https://www.youtube.com/c/Amrutveni"}
             target="_blank"
             className="hover:scale-125 transition-transform duration-300"
+            aria-label="Go to Amrutveni's youtube channel"
           >
             <Youtube className="text-white w-6" />
           </Link>

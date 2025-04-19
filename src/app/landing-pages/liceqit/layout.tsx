@@ -4,6 +4,13 @@ import { Navbar } from "@/features/liceqit/navbar";
 import { BottomNavbar } from "@/features/liceqit/navbar/bottom-nav";
 import { DataProvider } from "@/lib/utils/context/data-context";
 import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Amrutveni LiceQit",
+  description:
+    "Amrutveni LiceQit is an advanced herbal hair care solution specifically formulated to combat lice infestations effectively. Using innovative biotechnological methods, it integrates powerful bioactive ingredients for lice-free, healthy hair.",
+};
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (

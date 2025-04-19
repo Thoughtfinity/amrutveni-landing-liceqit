@@ -25,6 +25,7 @@ export const BuyNowButton = ({
       })}
       onClick={handleClick}
       {...props}
+      aria-label="Buy Amrutveni LiceQit now"
     >
       <p className="z-10">{message}</p>
       {showIcon && <ArrowRight className="w-4 z-10" />}

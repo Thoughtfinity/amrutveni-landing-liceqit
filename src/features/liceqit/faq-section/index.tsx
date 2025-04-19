@@ -33,6 +33,7 @@ export const FaqSection = () => {
                     setExpandedQuestion(faq?.id);
                   }
                 }}
+                aria-label="Expand the question"
               >
                 <span className="text-left font-medium text-[15px] desktop:text-lg">
                   {faq?.question}

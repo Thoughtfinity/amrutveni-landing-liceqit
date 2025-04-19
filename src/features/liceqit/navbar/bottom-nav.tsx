@@ -18,6 +18,7 @@ export const BottomNavbar = () => {
           animate="inView"
           exit="exit"
           className="fixed sm:hidden bottom-[10px] left-1/2 -translate-x-1/2 w-[calc(100%-32px)] mx-auto h-[60px] z-50 rounded-full flex items-center justify-center bg-liceqit-foreground"
+          aria-label="Buy Amrutveni LiceQit now"
         >
           <p className="text-white font-semibold">
             Buy LiceQit at ₹{LICEQIT_DATA?.liceqit?.basic?.price}

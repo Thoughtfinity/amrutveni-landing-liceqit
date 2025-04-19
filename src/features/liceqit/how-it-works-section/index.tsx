@@ -67,6 +67,7 @@ export const HowItWorksSection = () => {
           <button
             className="text-xs border rounded-full px-4 h-[36px] cursor-pointer transition-colors duration-300 relative before:absolute before:w-full before:h-full before:bg-liceqit-foreground before:left-0 before:translate-y-[26px] before:rounded-full hover:before:translate-y-[-9px] before:transition-transform before:duration-300 before:-z-0 hover:text-white hover:border-liceqit-primary overflow-hidden"
             onClick={() => setIsModalOpen((prev) => !prev)}
+            aria-label="Read more about Amrutveni LiceQit"
           >
             <p className="uppercase relative">Read More</p>
           </button>
@@ -146,6 +147,7 @@ export const HowItWorksSection = () => {
                 <button
                   className="border border-liceqit-foreground group p-2 rounded-full self-end cursor-pointer relative after:absolute after:w-full after:h-full after:bg-liceqit-foreground after:left-0 after:rounded-full after:translate-y-[9px] hover:after:translate-y-[-28px] after:transition-transform after:duration-300 overflow-hidden"
                   onClick={() => setIsModalOpen(false)}
+                  aria-label="Close the detailed description modal of Amrutveni LiceQit"
                 >
                   <X className="text-liceqit-foreground w-5 h-5 group-hover:text-white relative z-10 transition-colors duration-300" />
                 </button>

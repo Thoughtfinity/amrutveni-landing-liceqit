@@ -86,6 +86,7 @@ export const CustomerReviewsSection = () => {
           </Swiper>
           <div className="flex items-center justify-end gap-2">
             <button
+              aria-label="Move slider to left"
               className={classNames({
                 "w-10 h-10 rounded-full border flex items-center justify-center cursor-pointer":
                   true,
@@ -97,6 +98,7 @@ export const CustomerReviewsSection = () => {
               <ArrowLeft className="w-[16px] relative z-10" />
             </button>
             <button
+              aria-label="Move slider to right"
               className={classNames({
                 "w-10 h-10 rounded-full border flex items-center justify-center cursor-pointer":
                   true,

@@ -149,6 +149,7 @@ export const ReelsSection = () => {
               <button
                 className="border border-liceqit-foreground group p-2 rounded-full self-end cursor-pointer relative after:absolute after:w-full after:h-full after:bg-liceqit-foreground after:left-0 after:rounded-full after:translate-y-[9px] hover:after:translate-y-[-28px] after:transition-transform after:duration-300 overflow-hidden"
                 onClick={() => setIsModalOpen(false)}
+                aria-label="Open the reel"
               >
                 <X className="w-5 h-5 group-hover:text-white transition-colors duration-300 relative z-10" />
               </button>
@@ -165,6 +166,7 @@ export const ReelsSection = () => {
                       href={"https://www.instagram.com/amrutveni/"}
                       className="font-semibold text-[#0095f6] text-sm"
                       target="_blank"
+                      aria-label="Go to Amrutveni's instagram page"
                     >
                       Follow
                     </Link>

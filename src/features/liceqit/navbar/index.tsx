@@ -52,7 +52,11 @@ export const Navbar = () => {
 
   return (
     <div className="fixed top-0 flex items-center justify-between h-[60px] w-[calc(100%-32px)] desktop:w-[calc(100%-96px)] max-w-[1524px] z-50 mx-4 px-4 desktop:mx-12 bg-liceqit-background shadow-lg rounded-full mt-2">
-      <button onClick={() => scrollTo(0, 0)} className="cursor-pointer">
+      <button
+        onClick={() => scrollTo(0, 0)}
+        className="cursor-pointer"
+        aria-label="Amrutveni Logo"
+      >
         <Image
           src={Logo}
           alt="Amrutveni Logo"
@@ -63,6 +67,7 @@ export const Navbar = () => {
         <button
           className="text-xs border rounded-full px-4 h-[36px] cursor-pointer transition-colors duration-300 relative before:absolute before:w-full before:h-full before:bg-liceqit-foreground before:left-0 before:translate-y-[26px] before:rounded-full hover:before:translate-y-[-9px] before:transition-transform before:duration-300 before:-z-0 hover:text-white hover:border-liceqit-primary overflow-hidden"
           onClick={() => setIsNavbarOpen((prev) => !prev)}
+          aria-label="Open the navigation menu"
         >
           <p className="uppercase relative">menu</p>
         </button>
@@ -85,6 +90,7 @@ export const Navbar = () => {
               <Link
                 href={"https://amrutveni.com"}
                 className="flex items-center gap-2 w-fit group"
+                aria-label="Go to homepage"
               >
                 <Home
                   size={16}
@@ -95,9 +101,9 @@ export const Navbar = () => {
                 </p>
               </Link>
               <button
-                // href={"/pamphlets/liceqit/liceqit-pamphlet.pdf"}
                 onClick={downloadHandler}
                 className="flex items-center gap-2 w-fit group"
+                aria-label="Download the pamphlet for Amrutveni LiceQit"
               >
                 <Download
                   size={16}
@@ -110,6 +116,7 @@ export const Navbar = () => {
               <Link
                 href={"https://amrutveni.com/products"}
                 className="flex items-center gap-2 w-fit group"
+                aria-label="Go to products page"
               >
                 <ExternalLink
                   size={16}
@@ -124,6 +131,7 @@ export const Navbar = () => {
             <button
               className="self-center mt-4 border rounded-full p-2 group relative after:absolute after:w-full after:h-full after:bg-liceqit-foreground after:rounded-full after:left-0 after:transition-transform after:duration-300 after:translate-y-[9px] hover:after:translate-y-[-44px] after:-z-10 transition-colors duration-300 hover:border-liceqit-primary overflow-hidden cursor-pointer"
               onClick={() => setIsNavbarOpen(false)}
+              aria-label="Close the navigation menu"
             >
               <X className="w-[36px] h-[36px] group-hover:text-white transition-colors duration-300 relative" />
             </button>

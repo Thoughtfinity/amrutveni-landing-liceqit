@@ -12,16 +12,16 @@ import { howToUseStepsVariants } from "@/lib/variants/liceqit";
 const StepImageMapper: Record<number, string> = {
   1:
     process.env.NODE_ENV === "production"
-      ? "bg-[url('/amrutveni-landing-liceqit/images/liceqit/how-to-use/step-1.png')]"
-      : "bg-[url('/images/liceqit/how-to-use/step-1.png')]",
+      ? "bg-[url('/amrutveni-landing-liceqit/images/liceqit/how-to-use/step-1.webp')]"
+      : "bg-[url('/images/liceqit/how-to-use/step-1.webp')]",
   2:
     process.env.NODE_ENV === "production"
-      ? "bg-[url('/amrutveni-landing-liceqit/images/liceqit/how-to-use/step-2.png')]"
-      : "bg-[url('/images/liceqit/how-to-use/step-2.png')]",
+      ? "bg-[url('/amrutveni-landing-liceqit/images/liceqit/how-to-use/step-2.webp')]"
+      : "bg-[url('/images/liceqit/how-to-use/step-2.webp')]",
   3:
     process.env.NODE_ENV === "production"
-      ? "bg-[url('/amrutveni-landing-liceqit/images/liceqit/how-to-use/step-3.png')]"
-      : "bg-[url('/images/liceqit/how-to-use/step-3.png')]",
+      ? "bg-[url('/amrutveni-landing-liceqit/images/liceqit/how-to-use/step-3.webp')]"
+      : "bg-[url('/images/liceqit/how-to-use/step-3.webp')]",
 };
 
 export const HowToUseSection = () => {

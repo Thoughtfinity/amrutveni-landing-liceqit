@@ -8,7 +8,7 @@ const InterSans = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Product Pages",
+  title: "Amrutveni Products",
   description: "Single landing pages for Amrutveni products",
 };
 

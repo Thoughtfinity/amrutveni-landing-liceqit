@@ -1,12 +1,12 @@
 import React from "react";
 import LICEQIT_DATA from "@/lib/constants/liceqit/liceqit.json";
 import { SlideUpAnimator } from "../common/slideup-animation";
-import BenefitOne from "@/../public/images/liceqit/benefit/benefit-1.jpeg";
-import BenefitTwo from "@/../public/images/liceqit/benefit/benefit-2.jpg";
-import BenefitThree from "@/../public/images/liceqit/benefit/benefit-3.jpg";
-import BenefitFour from "@/../public/images/liceqit/benefit/benefit-4.jpeg";
-import BenefitFive from "@/../public/images/liceqit/benefit/benefit-5.jpeg";
-import BenefitSix from "@/../public/images/liceqit/benefit/benefit-6.jpg";
+import BenefitOne from "@/../public/images/liceqit/benefit/benefit-1.webp";
+import BenefitTwo from "@/../public/images/liceqit/benefit/benefit-2.webp";
+import BenefitThree from "@/../public/images/liceqit/benefit/benefit-3.webp";
+import BenefitFour from "@/../public/images/liceqit/benefit/benefit-4.webp";
+import BenefitFive from "@/../public/images/liceqit/benefit/benefit-5.webp";
+import BenefitSix from "@/../public/images/liceqit/benefit/benefit-6.webp";
 import Image, { StaticImageData } from "next/image";
 
 export const BenefitsSection = () => {
@@ -35,6 +35,7 @@ export const BenefitsSection = () => {
             <div className="flex items-center justify-center border py-6 relative">
               <Image
                 src={ImageMapper[benefit?.id]}
+                width={86}
                 alt="featured"
                 className="w-[50%] rounded-lg z-10 transition-all duration-300 group-hover:shadow-2xl group-hover:scale-110"
               />
