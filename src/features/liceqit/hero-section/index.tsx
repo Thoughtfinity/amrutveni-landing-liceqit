@@ -3,15 +3,12 @@
 import { BuyNowButton } from "@/features/liceqit/common/buynow-button";
 import React from "react";
 import classNames from "classnames";
-import { useDataContext } from "@/lib/utils/context/useDataContext";
 import { motion } from "motion/react";
 
 export const HeroSection = () => {
-  const { heroRef, isPageLoaded } = useDataContext();
-
   return (
     <>
-      <div className="min-h-[calc(100vh-60px)] p-4 lg:hidden" ref={heroRef}>
+      <div className="min-h-[calc(100vh-60px)] p-4 lg:hidden">
         <div
           className={classNames({
             "w-full h-full min-h-[calc(100vh-132px)] rounded-4xl bg-cover bg-center relative p-4 flex items-end justify-center":
@@ -38,8 +35,8 @@ export const HeroSection = () => {
                 >
                   <motion.path
                     initial={{ pathLength: 0 }}
-                    animate={{ pathLength: isPageLoaded ? 1 : 0 }}
-                    transition={{ duration: 1 }}
+                    whileInView={{ pathLength: 1 }}
+                    transition={{ duration: 1, delay: 0.3 }}
                     viewport={{ once: true }}
                     d="M49.3469 8.46043C21.4231 0.00187031 0.679144 16.5096 1.86844 28.0498C5.27343 61.0897 79.6134 38.383 66.6296 11.6774C61.5909 1.3137 35.441 -3.33385 8.10946 10.0583"
                     stroke="#FFA375"
@@ -61,8 +58,8 @@ export const HeroSection = () => {
                 >
                   <motion.path
                     initial={{ pathLength: 0 }}
-                    animate={{ pathLength: isPageLoaded ? 1 : 0 }}
-                    transition={{ duration: 1 }}
+                    whileInView={{ pathLength: 1 }}
+                    transition={{ duration: 1, delay: 0.3 }}
                     viewport={{ once: true }}
                     d="M0.960538 13.4614C0.960538 13.4614 54.1746 -0.816016 55.9458 1.97433C57.7169 4.76469 1.76664 16.1297 3.2801 23.2622C4.79355 30.3947 60.388 9.6345 60.388 9.6345"
                     stroke="#FFA375"
@@ -102,8 +99,8 @@ export const HeroSection = () => {
               >
                 <motion.path
                   initial={{ pathLength: 0 }}
-                  animate={{ pathLength: isPageLoaded ? 1 : 0 }}
-                  transition={{ duration: 1 }}
+                  whileInView={{ pathLength: 1 }}
+                  transition={{ duration: 1, delay: 0.3 }}
                   viewport={{ once: true }}
                   d="M49.3469 8.46043C21.4231 0.00187031 0.679144 16.5096 1.86844 28.0498C5.27343 61.0897 79.6134 38.383 66.6296 11.6774C61.5909 1.3137 35.441 -3.33385 8.10946 10.0583"
                   stroke="#FFA375"
@@ -126,8 +123,8 @@ export const HeroSection = () => {
               >
                 <motion.path
                   initial={{ pathLength: 0 }}
-                  animate={{ pathLength: isPageLoaded ? 1 : 0 }}
-                  transition={{ duration: 1 }}
+                  whileInView={{ pathLength: 1 }}
+                  transition={{ duration: 1, delay: 0.3 }}
                   viewport={{ once: true }}
                   d="M0.960538 13.4614C0.960538 13.4614 54.1746 -0.816016 55.9458 1.97433C57.7169 4.76469 1.76664 16.1297 3.2801 23.2622C4.79355 30.3947 60.388 9.6345 60.388 9.6345"
                   stroke="#FFA375"
