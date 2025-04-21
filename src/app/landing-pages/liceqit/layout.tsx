@@ -38,7 +38,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             {children}
             <Footer />
           </div>
-          {/* <PreLoader /> */}
         </DataProvider>
       </>
     </section>
